@@ -1,0 +1,13 @@
+Temática:
+
+	Gimnasio de Karate
+
+Secciones:
+
+	Home
+	Sobre Nosotros
+	Noticias
+	Contacto
+	
+
+
