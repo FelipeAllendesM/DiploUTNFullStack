@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Contacto</title>
+  </head>
+  <body>
+    <h2>Llena el siguiente Formulario y te contactaremos</h2>
+    <form action="">
+      <p>
+        <label for="nombre"><b>Nombre</b></label>
+        <input type="text" name="nombre" />
+      </p>
+      <p>
+        <label for="apellido"><b>Apellido</b></label>
+        <input type="text" name="apellido" />
+      </p>
+      <p>
+        <label for="sexo"><b>Sexo</b></label>
+        <ul>
+            <li>
+                <input type="radio" name="sexo" id="masculino">
+                <label for="masculino">Masculino</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" id="femenino">
+                <label for="femenino">Femenino</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" id="no_quiere_indicar">
+                <label for="no_quiere_indicar">No quiere indicar</label>
+            </li>
+        </ul>
+      </p>
+      <p>
+        <label for="hobbies"><b>Seleccione al menos un Hobbie</b></label><br>
+        <input type="checkbox" name="hobbies[]" id="bailar" value="bailar">
+        <label for="bailar">Bailar</label>
+        <input type="checkbox" name="hobbies[]" id="cantar" value="cantar">
+        <label for="cantar">Cantar</label>
+        <input type="checkbox" name="hobbies[]" id="correr" value="correr">
+        <label for="correr">Correr</label>
+      </p>
+      <p>
+        <label for="correo"><b>Indique dirección de correo</b></label>
+        <input type="text" name="correo" />
+      </p>
+      <input type="button" value="Enviar">
+      <input type="reset" value="Borrar">
+    </form>
+  </body>
+</html>
