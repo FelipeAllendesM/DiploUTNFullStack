@@ -1,0 +1,76 @@
+h1 {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  color: darkslategrey;
+}
+p {
+  font-family: "Alumni Sans Pinstripe", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+}
+img {
+  display: block;
+  width: 250px;
+  height: 450px;
+  margin: auto;
+  border: 10px solid transparent;
+  border-color: brown;
+}
+li {
+  font-size: 18px;
+}
+ul {
+  color: cadetblue;
+}
+form {
+  background-color: aqua;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+#p_form {
+  background-color: aqua;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h2 {
+  text-align: left;
+}
+div {
+  border: 2px solid transparent;
+}
+#ul_form {
+  color: brown;
+}
+#caja {
+  width: 300px;
+  height: 600px;
+  /*background-color: burlywood;*/
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(123, 190, 150, 0.9641106442577031) 48%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border-radius: 15px 0 0 15px;
+  box-shadow: 10px 15px 18px gray;
+  margin: 100px;
+  padding: 20px;
+}
+.texto {
+  background-color: beige;
+  column-count: 3;
+  column-gap: 60px;
+}
+.texto p {
+  margin: 0;
+}
