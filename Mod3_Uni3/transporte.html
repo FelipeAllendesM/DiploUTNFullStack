@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea1 Modulo3 Unidad3</title>
+    <script type="text/javascript">
+        const distancia = parseInt(prompt('Ingrese la distancia a recorrer en metros:', ''));
+        // alert(distancia);
+        if (Number.isNaN(distancia)) {
+            document.write('Ingrese un valor numerico');
+        } else if (distancia <= 1000) {
+            document.write('camina te hara bien');
+        } else if (distancia > 1000 && distancia <= 10000) {
+            document.write('toma tu bicicleta');
+        } else if (distancia > 10000 && distancia <= 30000) {
+            document.write('toma un colectivo');
+        } else if (distancia > 30000 && distancia <= 100000) {
+            document.write('toma las llaves de tu auto');
+        } else if (distancia > 100000) {
+            document.write('esto esta muy lejos, vamos por unos boletos de avion');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
