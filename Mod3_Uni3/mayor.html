@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea2 Modulo3 Unidad3</title>
+    <script type="text/javascript">
+        let lista = prompt('Ingrese una lista de números separados por punto y coma ;', '');
+        if (!lista) {
+            document.write('No se ingresaron números.');
+        }
+        let numeros = lista.split(";").map(num => parseFloat(num.trim()));
+        if (numeros.some(isNaN)) {
+            document.write('ingrese valores validos.');
+        }
+        let mayor = Math.max(...numeros);
+        document.write('el numero mayor es:', mayor);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
