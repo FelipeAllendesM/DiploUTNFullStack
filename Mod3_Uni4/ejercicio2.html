@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <style>
+        textarea {
+            width: 300px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="textArea" oninput="updateCharacterCount()"></textarea>
+    <p>Cantidad de Caracteres: <span id="charCount">0</span></p>
+
+    <script>
+        function updateCharacterCount() {
+            const textArea = document.getElementById("textArea");
+            const charCount = document.getElementById("charCount");
+            charCount.textContent = textArea.value.length;
+        }
+    </script>
+</body>
+
+</html>

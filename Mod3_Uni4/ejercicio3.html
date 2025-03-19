@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    <style>
+        button {
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Lista de Notas por Alumno</h2>
+    <ul id="listaAlumnos"></ul>
+    <script>
+        var alumnos = [
+            { nombre: 'Juan Gomez', nota: 7 },
+            { nombre: 'Pedro Rodriguez', nota: 4 },
+            { nombre: 'Roxana García', nota: 8 },
+            { nombre: 'Luciano Lopez', nota: 5 },
+            { nombre: 'Fernanda Gimenez', nota: 6 },
+            { nombre: 'Florencia Martinez', nota: 10 },
+            { nombre: 'Raul Sanchez', nota: 7 },
+            { nombre: 'Sandra Figueroa', nota: 8 }
+        ];
+
+        function mostrarTodosLosAlumnos() {
+            var lista = document.getElementById("listaAlumnos");
+            lista.innerHTML = ""; // Limpiar la lista antes de agregar nuevos elementos
+
+            alumnos.forEach(alumno => {
+                var li = document.createElement("li");
+                li.textContent = `${alumno.nombre} - Nota: ${alumno.nota}`;
+                lista.appendChild(li);
+            });
+        }
+        // Mostrar los alumnos al cargar la página
+        window.onload = mostrarTodosLosAlumnos;
+
+    </script>
+
+
+
+    <button onclick="mostrarAprobados()">Mostrar Alumnos Aprobados</button>
+    <ul id="listaAprobados"></ul>
+
+    <script>
+
+        function mostrarAprobados() {
+            var lista = document.getElementById("listaAprobados");
+            if (lista.style.display === "none") {
+                lista.style.display = "block";
+                lista.innerHTML = "";
+                var aprobados = alumnos.filter(alumno => alumno.nota >= 7);
+                aprobados.forEach(alumno => {
+                    var li = document.createElement("li");
+                    li.textContent = `${alumno.nombre} - Nota: ${alumno.nota}`;
+                    lista.appendChild(li);
+                });
+            } else {
+                lista.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
