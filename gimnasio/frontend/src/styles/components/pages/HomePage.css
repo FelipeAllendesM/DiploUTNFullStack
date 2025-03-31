@@ -1,0 +1,34 @@
+/* Inicio Estilo Contenido Home */
+.bienvenidos{
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.bienvenidos p{
+    font-size: 18px;
+}
+
+.testimonios{
+    width: 25%;
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding: 16px;
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin: 12px 0;
+}
+/*Fin Estilo Contenido Home */

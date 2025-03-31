@@ -1,0 +1,60 @@
+/*Inicio Estilo Contenido Nosotros */
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.historia h3{
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 700;
+    border: 5px transparent solid;
+}
+.historia p{
+    font-size: 15px;
+}
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 23%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.persona img{
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.persona h5,
+.persona h6 {
+    margin: 0;
+    font-weight: normal;
+    color: #2e64a1;
+}
+
+.persona h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.persona h6{
+    font-size: 11px;
+    font-style: italic;
+}
+
+.persona p {
+    font-size: 10px;
+    color: #666;
+}
+
+/*Fin Estilo Contenido Nosotros */

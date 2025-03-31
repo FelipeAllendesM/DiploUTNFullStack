@@ -1,0 +1,27 @@
+header{
+    background-image: url("../../../../public/images/img_cab2.jpg");
+    background-size: 90%; 
+    padding: 16px 1px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header img {
+    width: 200px;
+}
+
+header h1 {
+    font-family: "Aclonica", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 50px;
+    display: inline-block;
+    bottom: 35px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+}
