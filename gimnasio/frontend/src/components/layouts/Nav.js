@@ -1,14 +1,14 @@
 import React from 'react';
-//*import { NavLink } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import '../../styles/components/layout/Nav.css';
+import '../../App.css';
 
 const Nav = (props) => {
     return (
         <nav>
-            <div>
+            <div class="holder">
                 <ul>
-                    <li><NavLink to="/" className={({ isActive }) => isActive ? "activo" : undefined}>Home</NavLink></li>
+                    <li><NavLink to="/" className={({ isActive }) => isActive ? "activo" : undefined}>Inicio</NavLink></li>
                     <li><NavLink to="/nosotros" className={({ isActive }) => isActive ? "activo" : undefined}>Nosotros</NavLink></li>
                     <li><NavLink to="/beneficios" className={({ isActive }) => isActive ? "activo" : undefined}>Beneficios</NavLink></li>
                     <li><NavLink to="/galeria" className={({ isActive }) => isActive ? "activo" : undefined}>Galeria</NavLink></li>

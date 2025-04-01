@@ -1,4 +1,6 @@
 import React from 'react';
+import '../styles/components/pages/BeneficiosPage.css';
+import '../App.css';
 const BeneficiosPage = (props) => {
     return (
         <main className="holder">

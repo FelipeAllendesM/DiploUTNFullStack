@@ -6,8 +6,8 @@ const Header = (props) => {
     return (
         <header>
             <div className="holder">
-                <img src="/images/logo.png" width="100" alt="Goju Ryu Shorei " />
-                <h1>Goju Ryu Shorei</h1>
+                <img src="/images/logo.png" width="100" alt="Goju Ryu Shorei Chile" />
+                <h1>Goju Ryu Shorei Chile</h1>
             </div>
         </header>
 

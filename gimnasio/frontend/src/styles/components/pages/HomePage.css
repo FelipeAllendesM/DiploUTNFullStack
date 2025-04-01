@@ -6,11 +6,16 @@
 }
 
 .bienvenidos p{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .testimonios{
     width: 25%;
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
 }
 
 .testimonio{
