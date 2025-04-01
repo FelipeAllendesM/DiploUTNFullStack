@@ -4,9 +4,6 @@ import '../App.css';
 const HomePage = (props) => {
     return (
         <main className='holder'>
-            <div className='homeimg'>
-                <img src="/images/Home.jpg" alt='imagen principal' />
-            </div>
             <div className='columnas'>
                 <div className='bienvenidos'>
                     <h2>Bienvenidos</h2>
@@ -20,6 +17,9 @@ const HomePage = (props) => {
                         <span className='autor'>Juan Perez</span>
                     </div>
                 </div>
+            </div>
+            <div className='homeimg'>
+                <img src="/images/Home.jpg" alt='imagen principal' />
             </div>
         </main>
     );
