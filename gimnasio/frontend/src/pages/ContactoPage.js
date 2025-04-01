@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles'
+import '../styles/components/pages/ContactoPage.css';
+
 const ContactoPage = (props) => {
     return (
         <main className="holder contacto">
@@ -36,7 +37,7 @@ const ContactoPage = (props) => {
                     <li>Telefono: +569 XXXX XXXX</li>
                     <li>Email: micorreo@gmail.com</li>
                     <li>Facebook:
-                        <a href="https://www.facebook.com/share/g/14npmDzX7u/" target="_blank">
+                        <a href="https://www.facebook.com/share/g/14npmDzX7u/">
                             Casa Central IGRS Chile
                         </a>
                     </li>
