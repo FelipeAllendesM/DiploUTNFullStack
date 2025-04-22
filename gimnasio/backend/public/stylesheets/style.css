@@ -1,0 +1,59 @@
+header{
+  background-image: url("/images/img_cab2.jpg");
+  background-size: 90%; 
+  padding: 16px 1px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+header img {
+  width: 200px;
+}
+
+header h1 {
+  font-family: "Aclonica", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 50px;
+  display: inline-block;
+  bottom: 35px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  background-color: #ccc;
+  clear:both;
+  color: #333;
+  text-align: center;
+  padding: 5px 0;
+  margin-top: 20px;
+
+}
+body {
+  font-family:'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+.holder{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.holder div img {
+  width: 100%;
+  max-height: 360px;
+  border: 20px solid transparent;
+}
+
+h2{
+  color: #2e64a1;
+  font-weight: 400;
+}
