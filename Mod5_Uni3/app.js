@@ -29,6 +29,20 @@ pool.query('select * from empleados').then(function (resultados) {
   console.log(resultados)
 });
 
+//pruebas de insert
+
+var obj = {
+  nombre: 'Juan',
+  apellido: 'Lopez',
+  trabajo: 'Profesor',
+  edad: '39',
+  salario: 1500000,
+  mail: 'juan.lopez@micorreo.cl'
+}
+pool.query('insert into empleados set ?', [obj]).then(function (resultados) {
+  console.log(resultados)
+});
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
