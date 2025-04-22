@@ -30,7 +30,7 @@ pool.query('select * from empleados').then(function (resultados) {
 });
 
 //pruebas de insert
-
+/*
 var obj = {
   nombre: 'Juan',
   apellido: 'Lopez',
@@ -42,6 +42,23 @@ var obj = {
 pool.query('insert into empleados set ?', [obj]).then(function (resultados) {
   console.log(resultados)
 });
+*/
+//pruebas update
+/*var id = 23;
+var obj = {
+  nombre: 'Esteban',
+  apellido: 'Dirty'
+}
+pool.query('update empleados set ? where id_emp=?', [obj, id]).then(function (resultados) {
+  console.log(resultados)
+});
+*/
+//pruebas delete
+var id = 23;
+pool.query('delete from empleados where id_emp=?', [id]).then(function (resultados) {
+  console.log(resultados)
+});
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
