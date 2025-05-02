@@ -9,6 +9,16 @@ router.get('/', function (req, res, next) {
     });
 });
 
+/* Logout. */
+router.get('/logout', function (req, res, next) {
+    req.session.destroy();
+    res.render('admin/login', {        //login.hbs
+        layout: 'admin/layout'         //layout.hbs
+    });
+});
+
+
+/* Validar Inicio de Session*/
 router.post('/', async (req, res, next) => {
     try {
         var usuario = req.body.usuario;
@@ -17,6 +27,8 @@ router.post('/', async (req, res, next) => {
         var data = await usuariosModel.getUserByUserAndPass(usuario, password);
 
         if (data != undefined) {
+            req.session.id_usuario = data.id;
+            req.session.nombre = data.usuario;
             res.redirect('/admin/novedades');
         } else {
             res.render('admin/login', {
